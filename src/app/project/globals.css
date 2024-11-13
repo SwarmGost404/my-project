@@ -22,14 +22,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-a:hover {
-  color: green;
-  transform: scale(1.2);
-  transition: 0.5s;
-  text-shadow: #ffffff;
-}
-
 @media (min-width: 1000px) {
   header, footer {
     width: 100%;
@@ -39,21 +31,15 @@ a:hover {
     background-color: #171717;
     text-align: center;
   }
+  main {
+    display: flex;
+    margin: 50px;
+  }
   header {
     top: 0px;
-    input {
-      height: 55px;
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    #logo {
-      position: absolute;
-      left: 0px;
-    }
   }
   footer {
     bottom: 0px;
-    padding: 18px;
   }
   main {
     article {
@@ -65,4 +51,27 @@ a:hover {
       text-align: center;
     }
   }
+}
+.card {
+  width: 200px;
+  height: 280px;
+  border: #ededed 2px solid;
+  position: relative;
+  background-color: #0a0a0a;
+  top: 150px;
+  margin: 50px;
+  .card-title {
+    width: 200px;
+    height: 50px;
+    border: #ededed 1px solid;
+    text-align: center;
+    font-size: 30px;
+  }
+  .card-content {
+    text-align: center;
+  }
+}
+.card:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
